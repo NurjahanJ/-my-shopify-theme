@@ -103,4 +103,3 @@ shopify theme share --store modern-stitch-fiber.myshopify.com
 
 ---
 
-*Built for IS373 - E-commerce Development*
