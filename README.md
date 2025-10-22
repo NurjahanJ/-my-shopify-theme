@@ -102,4 +102,3 @@ shopify theme share --store modern-stitch-fiber.myshopify.com
 4. Submit a pull request
 
 ---
-
