@@ -1,0 +1,229 @@
+<div class="section-background color-{{ section.settings.color_scheme }}"></div>
+<div class="crochet-features-section section section--full-width color-{{ section.settings.color_scheme }}">
+  <div class="section-content-wrapper spacing-style size-style border-style" 
+       style="{% render 'spacing-style', settings: section.settings %}">
+    
+    <div class="crochet-features__container">
+      {% if section.settings.heading != blank %}
+        <h2 class="crochet-features__heading">{{ section.settings.heading }}</h2>
+      {% endif %}
+      
+      {% if section.settings.description != blank %}
+        <div class="crochet-features__description">
+          {{ section.settings.description }}
+        </div>
+      {% endif %}
+      
+      <div class="crochet-features__grid">
+        {% for block in section.blocks %}
+          <div class="crochet-features__item" {{ block.shopify_attributes }}>
+            {% if block.settings.icon != blank %}
+              <div class="crochet-features__icon">
+                {{ block.settings.icon | image_url: width: 80 | image_tag: alt: block.settings.title }}
+              </div>
+            {% endif %}
+            
+            {% if block.settings.title != blank %}
+              <h3 class="crochet-features__item-title">{{ block.settings.title }}</h3>
+            {% endif %}
+            
+            {% if block.settings.description != blank %}
+              <p class="crochet-features__item-description">{{ block.settings.description }}</p>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% stylesheet %}
+  .crochet-features-section {
+    padding: 60px 0;
+  }
+  
+  .crochet-features__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .crochet-features__heading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: rgb(var(--color-foreground));
+  }
+  
+  .crochet-features__description {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: rgb(var(--color-foreground));
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .crochet-features__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .crochet-features__item {
+    padding: 2rem;
+    border-radius: 12px;
+    background: rgba(var(--color-background), 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .crochet-features__item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .crochet-features__icon {
+    margin-bottom: 1rem;
+  }
+  
+  .crochet-features__icon img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+  }
+  
+  .crochet-features__item-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: rgb(var(--color-primary));
+  }
+  
+  .crochet-features__item-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgb(var(--color-foreground));
+  }
+  
+  @media (max-width: 768px) {
+    .crochet-features__grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    
+    .crochet-features__heading {
+      font-size: 2rem;
+    }
+    
+    .crochet-features__item {
+      padding: 1.5rem;
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Crochet Features",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Why Choose Our Crochet Kits?"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Discover what makes our crochet kit boxes special</p>"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Premium Yarns"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Hand-selected premium yarns from trusted suppliers worldwide."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Crochet Features",
+      "blocks": [
+        {
+          "type": "feature",
+          "settings": {
+            "title": "Premium Yarns",
+            "description": "Hand-selected premium yarns from trusted suppliers worldwide for the softest, most durable projects."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "title": "Expert Patterns",
+            "description": "Carefully crafted patterns by professional designers, suitable for all skill levels from beginner to advanced."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "title": "Complete Kits",
+            "description": "Everything you need included - yarn, hooks, stitch markers, and detailed instructions. No extra shopping required."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "title": "Monthly Surprise",
+            "description": "New exciting projects delivered to your door every month. Cancel or pause anytime with no commitment."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

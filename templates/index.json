@@ -1,286 +1,115 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */{
+{
   "sections": {
-    "hero_jVaWmY": {
+    "hero": {
       "type": "hero",
       "blocks": {
-        "text_YLPk4p": {
+        "hero_text": {
           "type": "text",
-          "name": "t:names.heading",
           "settings": {
-            "text": "<p>Browse our latest products</p>",
+            "text": "<h1>Your Trusted Crochet Kit Partner</h1><p>Professional monthly crochet kit boxes for crafters who demand quality. Premium yarns, expert patterns, and complete project guidance - delivered with care to your door.</p>",
             "width": "fit-content",
             "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h2",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
+            "alignment": "center",
+            "type_preset": "h1",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
             "line_height": "normal",
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
-            "color": "var(--color-foreground-heading)",
+            "color": "",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
             "padding-block-start": 0,
-            "padding-block-end": 0,
+            "padding-block-end": 20,
             "padding-inline-start": 0,
             "padding-inline-end": 0
-          },
-          "blocks": {}
+          }
         },
-        "button_H9gpTf": {
+        "hero_button": {
           "type": "button",
-          "name": "t:names.button",
           "settings": {
-            "label": "Shop all",
+            "label": "Get Started Today",
             "link": "shopify://collections/all",
             "open_in_new_tab": false,
-            "style_class": "button-secondary",
+            "style_class": "button-primary",
             "width": "fit-content",
             "custom_width": 100,
             "width_mobile": "fit-content",
             "custom_width_mobile": 100
-          },
-          "blocks": {}
+          }
         }
       },
-      "block_order": [
-        "text_YLPk4p",
-        "button_H9gpTf"
-      ],
-      "name": "t:names.hero",
+      "block_order": ["hero_text", "hero_button"],
       "settings": {
         "media_type_1": "image",
-        "media_type_2": "image",
-        "open_in_new_tab": false,
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "space-between",
-        "vertical_alignment": "flex-end",
-        "align_baseline": true,
         "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "flex-end",
-        "gap": 24,
-        "section_width": "page-width",
-        "section_height": "medium",
-        "section_height_custom": 50,
-        "color_scheme": "scheme-6",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_height": "large",
+        "color_scheme": "scheme-1",
+        "padding-block-start": 60,
+        "padding-block-end": 60,
         "toggle_overlay": true,
-        "overlay_color": "#12121266",
-        "overlay_style": "solid",
-        "gradient_direction": "to bottom",
-        "blurred_reflection": false,
-        "reflection_opacity": 75,
-        "padding-block-start": 100,
-        "padding-block-end": 72
+        "overlay_style": "gradient",
+        "overlay_color": "#2D8B8B",
+        "overlay_opacity": 20
       }
     },
-    "product_list_fa6P9H": {
+    "featured-collection": {
       "type": "product-list",
-      "blocks": {
-        "static-header": {
-          "type": "_product-list-content",
-          "name": "t:names.header",
-          "static": true,
-          "settings": {
-            "content_direction": "row",
-            "vertical_on_mobile": false,
-            "horizontal_alignment": "space-between",
-            "vertical_alignment": "flex-end",
-            "align_baseline": true,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "product_list_text_YFtzcL": {
-              "type": "_product-list-text",
-              "name": "t:names.collection_title",
-              "settings": {
-                "text": "<h3>{{ closest.collection.title }}</h3>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h4",
-                "font": "var(--font-body--family)",
-                "font_size": "",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "product_list_button_MWeP9V": {
-              "type": "_product-list-button",
-              "name": "t:names.product_list_button",
-              "settings": {
-                "label": "View all",
-                "open_in_new_tab": false,
-                "style_class": "link",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "product_list_text_YFtzcL",
-            "product_list_button_MWeP9V"
-          ]
-        },
-        "static-product-card": {
-          "type": "_product-card",
-          "name": "t:names.product_card",
-          "static": true,
-          "settings": {
-            "product_card_gap": 4,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "product_card_gallery_677WP3": {
-              "type": "_product-card-gallery",
-              "name": "t:names.product_card_media",
-              "settings": {
-                "image_ratio": "adapt",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "product_title_YXxMTj": {
-              "type": "product-title",
-              "name": "t:names.product_title",
-              "settings": {
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 4,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "price_JQzVV4": {
-              "type": "price",
-              "name": "t:names.product_price",
-              "settings": {
-                "show_sale_price_first": true,
-                "show_installments": false,
-                "show_tax_info": false,
-                "type_preset": "h6",
-                "width": "100%",
-                "alignment": "left",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "color": "var(--color-foreground)",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "product_card_gallery_677WP3",
-            "product_title_YXxMTj",
-            "price_JQzVV4"
-          ]
-        }
-      },
-      "name": "Featured collection",
       "settings": {
-        "collection": "all",
-        "layout_type": "grid",
-        "carousel_on_mobile": false,
-        "max_products": 8,
-        "columns": 4,
-        "mobile_columns": "2",
-        "mobile_card_size": "60cqw",
-        "columns_gap": 8,
-        "rows_gap": 24,
-        "icons_style": "arrow",
-        "icons_shape": "none",
-        "section_width": "page-width",
-        "horizontal_alignment": "flex-start",
-        "gap": 28,
+        "heading": "Choose Your Perfect Kit",
+        "heading_size": "h2",
+        "description": "<p>Simple, affordable pricing. No hidden fees. Choose the kit that matches your skill level and interests.</p>",
+        "collection": "",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
         "color_scheme": "scheme-1",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "value-props": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div style='background: #f8f9fa; padding: 80px 20px;'><div style='max-width: 1200px; margin: 0 auto; text-align: center;'><h2 style='font-size: 2.5rem; margin-bottom: 3rem; color: #333;'>Why Crafters Choose Us</h2><div style='display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;'><div style='padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'><div style='font-size: 2rem; color: #2D8B8B; margin-bottom: 1rem;'>💰</div><h3 style='font-size: 1.5rem; margin-bottom: 1rem; color: #2D8B8B;'>Simple, Affordable Pricing</h3><p style='color: #666; line-height: 1.6;'>Starting at $29 per kit. No hidden fees. Pay only for what you need. Cancel or pause anytime.</p></div><div style='padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'><div style='font-size: 2rem; color: #2D8B8B; margin-bottom: 1rem;'>👥</div><h3 style='font-size: 1.5rem; margin-bottom: 1rem; color: #2D8B8B;'>Personal Service</h3><p style='color: #666; line-height: 1.6;'>Direct communication with crochet experts who care. Not a call center. Real crafters helping crafters.</p></div><div style='padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'><div style='font-size: 2rem; color: #2D8B8B; margin-bottom: 1rem;'>📱</div><h3 style='font-size: 1.5rem; margin-bottom: 1rem; color: #2D8B8B;'>Complete Support</h3><p style='color: #666; line-height: 1.6;'>Video tutorials, pattern support, and community access. Get help whenever you need it.</p></div></div></div></div>",
+        "color_scheme": "scheme-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "testimonials": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div style='background: linear-gradient(135deg, #2D8B8B 0%, #1E6B6B 100%); color: white; padding: 80px 20px;'><div style='max-width: 1200px; margin: 0 auto; text-align: center;'><h2 style='font-size: 2.5rem; margin-bottom: 3rem; color: white;'>What Our Crafters Say</h2><div style='display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-top: 2rem;'><div style='padding: 2.5rem; background: rgba(255,255,255,0.1); border-radius: 16px; backdrop-filter: blur(10px);'><div style='margin-bottom: 1.5rem;'>⭐⭐⭐⭐⭐</div><blockquote style='font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem; font-style: italic;'>\"Finally found crochet kits I can trust! The detailed patterns and premium yarns give me complete confidence in every project.\"</blockquote><cite style='font-weight: 600; color: rgba(255,255,255,0.9);'>Sarah M.<br><small style='opacity: 0.8;'>Florida → 2 years subscriber</small></cite></div><div style='padding: 2.5rem; background: rgba(255,255,255,0.1); border-radius: 16px; backdrop-filter: blur(10px);'><div style='margin-bottom: 1.5rem;'>⭐⭐⭐⭐⭐</div><blockquote style='font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem; font-style: italic;'>\"The video tutorials saved me so much frustration! I couldn't have learned these advanced techniques without the expert guidance.\"</blockquote><cite style='font-weight: 600; color: rgba(255,255,255,0.9);'>Jennifer L.<br><small style='opacity: 0.8;'>Texas → Advanced Crocheter</small></cite></div><div style='padding: 2.5rem; background: rgba(255,255,255,0.1); border-radius: 16px; backdrop-filter: blur(10px);'><div style='margin-bottom: 1.5rem;'>⭐⭐⭐⭐⭐</div><blockquote style='font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem; font-style: italic;'>\"Professional quality, reliable delivery, and truly cares about the craft. The community support is incredibly helpful.\"</blockquote><cite style='font-weight: 600; color: rgba(255,255,255,0.9);'>Maria R.<br><small style='opacity: 0.8;'>New York → Gift Maker</small></cite></div></div></div></div>",
+        "color_scheme": "scheme-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "final-cta": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div style='background: white; padding: 80px 20px; text-align: center;'><div style='max-width: 600px; margin: 0 auto;'><h2 style='font-size: 2.5rem; margin-bottom: 1rem; color: #333;'>Ready to Start Your Crochet Journey?</h2><p style='font-size: 1.2rem; margin-bottom: 2rem; color: #666;'>Join thousands of happy crafters who trust us with their monthly crochet projects. Simple pricing, expert support, premium materials.</p><a href='/collections/all' style='display: inline-block; background: #2D8B8B; color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1rem; transition: transform 0.3s ease;' onmouseover='this.style.transform=\"translateY(-2px)\"' onmouseout='this.style.transform=\"translateY(0)\"'>Choose Your Kit Today</a><div style='margin-top: 1rem; font-size: 0.9rem; color: #999;'>Free shipping on orders over $50 • Cancel anytime</div></div></div>",
+        "color_scheme": "scheme-1",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
-  "order": [
-    "hero_jVaWmY",
-    "product_list_fa6P9H"
-  ]
+  "order": ["hero", "value-props", "featured-collection", "testimonials", "final-cta"]
 }

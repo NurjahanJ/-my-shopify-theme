@@ -1,9 +1,9 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Horizon",
-    "theme_version": "3.0.0",
-    "theme_author": "Shopify",
+    "theme_name": "Crochet Craft Kits",
+    "theme_version": "1.0.0",
+    "theme_author": "Modern Stitch Fiber",
     "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
     "theme_support_url": "https://support.shopify.com/"
   },
@@ -88,14 +88,14 @@
             "type": "color",
             "id": "primary",
             "label": "t:settings.primary_color",
-            "default": "#000F9F",
+            "default": "#2D8B8B",
             "alpha": true
           },
           {
             "type": "color",
             "id": "primary_hover",
             "label": "t:settings.primary_hover_color",
-            "default": "#000000",
+            "default": "#1E6B6B",
             "alpha": true
           },
           {
@@ -120,7 +120,7 @@
             "type": "color",
             "id": "primary_button_background",
             "label": "t:settings.background",
-            "default": "#000F9F",
+            "default": "#2D8B8B",
             "alpha": true
           },
           {
@@ -134,14 +134,14 @@
             "type": "color",
             "id": "primary_button_border",
             "label": "t:settings.borders",
-            "default": "#000F9F",
+            "default": "#2D8B8B",
             "alpha": true
           },
           {
             "type": "color",
             "id": "primary_button_hover_background",
             "label": "t:settings.hover_background",
-            "default": "#000F9F",
+            "default": "#2D8B8B",
             "alpha": true
           },
           {
@@ -155,7 +155,7 @@
             "type": "color",
             "id": "primary_button_hover_border",
             "label": "t:settings.hover_borders",
-            "default": "#000F9F",
+            "default": "#2D8B8B",
             "alpha": true
           },
           {
