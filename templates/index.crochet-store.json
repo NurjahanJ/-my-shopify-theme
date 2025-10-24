@@ -1,0 +1,175 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "blocks": {
+        "hero_text": {
+          "type": "text",
+          "settings": {
+            "text": "<h1>Premium Crochet Kit Boxes</h1><p>Everything you need to create beautiful crochet projects. Premium yarns, detailed patterns, and expert guidance delivered to your door monthly.</p>",
+            "width": "fit-content",
+            "max_width": "600px",
+            "alignment": "center",
+            "type_preset": "h1",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 20,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          }
+        },
+        "hero_button": {
+          "type": "button",
+          "settings": {
+            "label": "Shop Crochet Kits",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "button-primary",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          }
+        }
+      },
+      "block_order": ["hero_text", "hero_button"],
+      "settings": {
+        "media_type_1": "image",
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_height": "large",
+        "color_scheme": "scheme-1",
+        "padding-block-start": 60,
+        "padding-block-end": 60,
+        "toggle_overlay": true,
+        "overlay_style": "gradient",
+        "overlay_color": "#8B4B8C",
+        "overlay_opacity": 20
+      }
+    },
+    "crochet-features": {
+      "type": "crochet-features",
+      "blocks": {
+        "feature-1": {
+          "type": "feature",
+          "settings": {
+            "title": "Premium Yarns",
+            "description": "Hand-selected premium yarns from trusted suppliers worldwide for the softest, most durable projects."
+          }
+        },
+        "feature-2": {
+          "type": "feature",
+          "settings": {
+            "title": "Expert Patterns",
+            "description": "Carefully crafted patterns by professional designers, suitable for all skill levels from beginner to advanced."
+          }
+        },
+        "feature-3": {
+          "type": "feature",
+          "settings": {
+            "title": "Complete Kits",
+            "description": "Everything you need included - yarn, hooks, stitch markers, and detailed instructions. No extra shopping required."
+          }
+        },
+        "feature-4": {
+          "type": "feature",
+          "settings": {
+            "title": "Monthly Surprise",
+            "description": "New exciting projects delivered to your door every month. Cancel or pause anytime with no commitment."
+          }
+        }
+      },
+      "block_order": ["feature-1", "feature-2", "feature-3", "feature-4"],
+      "settings": {
+        "heading": "Why Choose Our Crochet Kits?",
+        "description": "<p>Discover what makes our crochet kit boxes special</p>",
+        "color_scheme": "scheme-2",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "featured-collection": {
+      "type": "product-list",
+      "settings": {
+        "heading": "Featured Crochet Kits",
+        "heading_size": "h2",
+        "description": "<p>Our most popular monthly subscription boxes</p>",
+        "collection": "",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "crochet-testimonials": {
+      "type": "crochet-testimonials",
+      "blocks": {
+        "testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "I've been crocheting for years, but these kits have introduced me to techniques and yarns I never would have tried on my own. Each month feels like Christmas morning!",
+            "author_name": "Sarah M.",
+            "author_title": "Crochet Enthusiast, 3 years subscriber"
+          }
+        },
+        "testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "As a beginner, I was intimidated by crochet. These kits made it so approachable with clear instructions and beautiful results. I've completed 8 projects so far!",
+            "author_name": "Jessica L.",
+            "author_title": "New Crocheter"
+          }
+        },
+        "testimonial-3": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "The yarn quality is exceptional and the patterns are modern and stylish. I've made gifts for my entire family from these kits. Worth every penny!",
+            "author_name": "Maria R.",
+            "author_title": "Gift Maker Extraordinaire"
+          }
+        }
+      },
+      "block_order": ["testimonial-1", "testimonial-2", "testimonial-3"],
+      "settings": {
+        "heading": "What Our Crocheters Say",
+        "description": "<p>Join thousands of happy crocheters who love our monthly kit boxes</p>",
+        "color_scheme": "scheme-3",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "custom-cta": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div style='background: linear-gradient(135deg, #8B4B8C 0%, #6B2C6D 100%); color: white; padding: 60px 20px; text-align: center; margin: 40px 0;'><div style='max-width: 600px; margin: 0 auto;'><h2 style='font-size: 2.5rem; margin-bottom: 1rem; color: white;'>Ready to Start Your Crochet Journey?</h2><p style='font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9;'>Join thousands of happy crocheters and get your first kit delivered next month!</p><a href='/collections/all' style='display: inline-block; background: white; color: #8B4B8C; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1rem; transition: transform 0.3s ease;' onmouseover='this.style.transform=\"translateY(-2px)\"' onmouseout='this.style.transform=\"translateY(0)\"'>Shop Crochet Kits Now</a></div></div>",
+        "color_scheme": "scheme-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": ["hero", "crochet-features", "featured-collection", "crochet-testimonials", "custom-cta"]
+}
