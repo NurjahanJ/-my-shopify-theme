@@ -30,7 +30,7 @@ A custom Shopify theme for Modern Stitch Fiber store, built on the Horizon theme
 
 4. **Pull latest theme changes** (if needed)
    ```bash
-   shopify theme pull --store modern-stitch-fiber.myshopify.com --theme 181391360298
+   shopify theme pull --store modern-stitch-fiber.myshopify.com --theme THEME_ID
    ```
 
 ## 📁 Theme Structure
@@ -70,7 +70,7 @@ A custom Shopify theme for Modern Stitch Fiber store, built on the Horizon theme
 shopify theme dev --store modern-stitch-fiber.myshopify.com
 
 # Pull theme from store
-shopify theme pull --store modern-stitch-fiber.myshopify.com --theme 181391360298
+shopify theme pull --store modern-stitch-fiber.myshopify.com --theme THEME_ID
 
 # Push theme to store
 shopify theme push --store modern-stitch-fiber.myshopify.com
