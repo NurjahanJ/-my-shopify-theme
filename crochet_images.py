@@ -67,10 +67,21 @@ class CrochetImageManager:
             
             'social-og': "Social media banner with cozy crochet scene background, teal branding colors, professional layout for Facebook/Instagram sharing, 1200x630 dimensions",
             
-            'social-square': "Instagram-ready square image of beautiful crochet project in progress, teal yarns, aesthetic flat lay, perfect for social media, 1080x1080"
+            'social-square': "Instagram-ready square image of beautiful crochet project in progress, teal yarns, aesthetic flat lay, perfect for social media, 1080x1080",
+            
+            # Finished crochet products for testimonials
+            'finished-blanket': "Beautiful finished crochet blanket in soft blush and cream colors, intricate stitch pattern, folded elegantly on white background, professional product photography, cozy handmade texture visible",
+            
+            'finished-scarf': "Elegant finished crochet scarf in sage green with delicate lace pattern, draped naturally on white background, soft natural lighting, premium handmade quality visible",
+            
+            'finished-hat': "Stylish finished crochet beanie hat in terracotta brown, textured cable knit pattern, positioned on white background, professional product photography, cozy winter accessory",
+            
+            'finished-bag': "Handmade crochet tote bag in teal color with sturdy handles, geometric pattern, standing upright on white background, practical and beautiful craftsmanship",
+            
+            'finished-cardigan': "Beautiful finished crochet cardigan in cream color, open front style, laid flat on white background, intricate stitch detail visible, professional garment photography"
         }
         
-        print("🧶 Crochet Image Manager Ready - Just tell me what to change!")
+        print("Crochet Image Manager Ready - Just tell me what to change!")
     
     def load_db(self):
         """Load image database"""
@@ -105,7 +116,12 @@ class CrochetImageManager:
             'process-quality': "Hands inspecting premium yarn quality for consistency",
             'process-packing': "Crochet kits being carefully packed with premium presentation",
             'social-og': "Crochet kit brand image for social media sharing",
-            'social-square': "Beautiful crochet work in progress for Instagram"
+            'social-square': "Beautiful crochet work in progress for Instagram",
+            'finished-blanket': "Finished crochet blanket in soft blush and cream colors",
+            'finished-scarf': "Elegant finished crochet scarf in sage green with lace pattern",
+            'finished-hat': "Stylish finished crochet beanie hat in terracotta brown",
+            'finished-bag': "Handmade crochet tote bag in teal with geometric pattern",
+            'finished-cardigan': "Beautiful finished crochet cardigan in cream color"
         }
         
         return alt_texts.get(image_name, f"Professional crochet image for {image_name.replace('-', ' ')}")
@@ -115,8 +131,8 @@ class CrochetImageManager:
         
         prompt = self.prompts.get(image_name, "Professional crochet crafting scene with teal accents")
         
-        print(f"🎨 Generating: {image_name}")
-        print(f"📝 Using: {prompt[:100]}...")
+        print(f"Generating: {image_name}")
+        print(f"Using: {prompt[:100]}...")
         
         try:
             response = self.client.images.generate(
@@ -134,7 +150,7 @@ class CrochetImageManager:
             return img_response.content
             
         except Exception as e:
-            print(f"❌ Generation failed: {e}")
+            print(f"Generation failed: {e}")
             raise
     
     def save_image(self, image_name, image_data):
@@ -173,7 +189,7 @@ class CrochetImageManager:
                     
                     resized.save(save_path, 'JPEG', quality=85, optimize=True)
                     saved_files.append(str(save_path))
-                    print(f"✅ Saved: {filename}")
+                    print(f"Saved: {filename}")
                 
                 # Clean up temp
                 temp_path.unlink()
@@ -182,7 +198,7 @@ class CrochetImageManager:
                 return str(self.assets_dir / f"{image_name}.jpg")
                 
         except Exception as e:
-            print(f"❌ Processing failed: {e}")
+            print(f"Processing failed: {e}")
             # Fallback
             main_path = self.assets_dir / f"{image_name}.jpg"
             temp_path.rename(main_path)
@@ -191,7 +207,7 @@ class CrochetImageManager:
     def update_image(self, image_name):
         """Complete workflow - you just say the name, I do everything"""
         
-        print(f"\n🧶 Updating {image_name}...")
+        print(f"\nUpdating {image_name}...")
         
         # Generate image
         image_data = self.generate_image(image_name)
@@ -213,18 +229,18 @@ class CrochetImageManager:
         
         self.save_db()
         
-        print(f"✅ {image_name} ready!")
-        print(f"📁 Saved to: assets/{image_name}.jpg")
-        print(f"🏷️  Alt text: {alt_text}")
-        print(f"📋 Next: Upload assets/{image_name}.jpg to Shopify admin → Settings → Files")
-        print(f"🔗 Then use: shopify://shop_images/{image_name}.jpg in templates")
+        print(f"{image_name} ready!")
+        print(f"Saved to: assets/{image_name}.jpg")
+        print(f"Alt text: {alt_text}")
+        print(f"Next: Upload assets/{image_name}.jpg to Shopify admin -> Settings -> Files")
+        print(f"Then use: shopify://shop_images/{image_name}.jpg in templates")
         
         return True
     
     def list_images(self):
         """Show all available images"""
         
-        print("\n🧶 Available Crochet Images:")
+        print("\nAvailable Crochet Images:")
         print("=" * 50)
         
         categories = {
@@ -233,14 +249,15 @@ class CrochetImageManager:
             'Products': ['product-beginner', 'product-intermediate', 'product-advanced'],
             'Lifestyle': ['lifestyle-home', 'lifestyle-crafting'],
             'Testimonials': ['testimonial-1', 'testimonial-2', 'testimonial-3'],
+            'Finished Products': ['finished-blanket', 'finished-scarf', 'finished-hat', 'finished-bag', 'finished-cardigan'],
             'Process': ['process-quality', 'process-packing'],
             'Social Media': ['social-og', 'social-square']
         }
         
         for category, images in categories.items():
-            print(f"\n📂 {category}:")
+            print(f"\n{category}:")
             for img in images:
-                status = "✅ Generated" if img in self.db["images"] else "⏳ Available"
+                status = "Generated" if img in self.db["images"] else "Available"
                 print(f"   {img} - {status}")
                 if img in self.db["images"]:
                     print(f"      Alt: {self.db['images'][img]['alt_text']}")
@@ -271,11 +288,11 @@ def main():
         elif command in manager.prompts:
             manager.update_image(command)
         else:
-            print(f"❌ Unknown image: {command}")
+            print(f"Unknown image: {command}")
             print("Run 'python crochet_images.py list' to see available images")
             
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f"Error: {e}")
         return 1
     
     return 0

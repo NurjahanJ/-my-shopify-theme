@@ -129,7 +129,10 @@
           "settings": {
             "quote": "I've been crocheting for years, but these kits have introduced me to techniques and yarns I never would have tried on my own. Each month feels like Christmas morning!",
             "author_name": "Sarah M.",
-            "author_title": "Crochet Enthusiast, 3 years subscriber"
+            "author_title": "Crochet Enthusiast, 3 years subscriber",
+            "product_image": "shopify://shop_images/finished-blanket.jpg",
+            "product_name": "Cozy Blanket",
+            "product_alt_text": "Beautiful finished crochet blanket in soft blush and cream colors"
           }
         },
         "testimonial-2": {
@@ -137,22 +140,40 @@
           "settings": {
             "quote": "As a beginner, I was intimidated by crochet. These kits made it so approachable with clear instructions and beautiful results. I've completed 8 projects so far!",
             "author_name": "Jessica L.",
-            "author_title": "New Crocheter"
+            "author_title": "New Crocheter",
+            "product_image": "shopify://shop_images/finished-scarf.jpg",
+            "product_name": "Elegant Scarf",
+            "product_alt_text": "Elegant finished crochet scarf in sage green with lace pattern"
           }
         },
         "testimonial-3": {
           "type": "testimonial",
           "settings": {
-            "quote": "The yarn quality is exceptional and the patterns are modern and stylish. I've made gifts for my entire family from these kits. Worth every penny!",
+            "quote": "Every project looks like something from a boutique! The thoughtful curation and beautiful packaging make these kits perfect for gifts. My family loves what I create!",
             "author_name": "Maria R.",
-            "author_title": "Gift Maker Extraordinaire"
+            "author_title": "New York • Gift Maker",
+            "product_image": "shopify://shop_images/finished-bag.jpg",
+            "product_name": "Stylish Tote Bag",
+            "product_alt_text": "Handmade crochet tote bag in teal with geometric pattern"
+          }
+        },
+        "testimonial-4": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "As an advanced crocheter, I was skeptical about kit boxes. But the complexity and quality of YarnStitch patterns challenged me in the best way. Absolutely love it!",
+            "author_name": "Patricia K.",
+            "author_title": "California • Advanced Crocheter",
+            "product_image": "shopify://shop_images/finished-hat.jpg",
+            "product_name": "Cable Knit Beanie",
+            "product_alt_text": "Stylish finished crochet beanie hat in terracotta brown"
           }
         }
       },
       "block_order": [
         "testimonial-1",
         "testimonial-2",
-        "testimonial-3"
+        "testimonial-3",
+        "testimonial-4"
       ],
       "settings": {
         "heading": "What Our Crocheters Say",
