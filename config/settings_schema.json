@@ -81,21 +81,21 @@
             "type": "color",
             "id": "foreground",
             "label": "t:settings.text",
-            "default": "#000000",
+            "default": "#4A3C35",
             "alpha": true
           },
           {
             "type": "color",
             "id": "primary",
             "label": "t:settings.primary_color",
-            "default": "#2D8B8B",
+            "default": "#D28F75",
             "alpha": true
           },
           {
             "type": "color",
             "id": "primary_hover",
             "label": "t:settings.primary_hover_color",
-            "default": "#1E6B6B",
+            "default": "#B5734F",
             "alpha": true
           },
           {
@@ -120,7 +120,7 @@
             "type": "color",
             "id": "primary_button_background",
             "label": "t:settings.background",
-            "default": "#2D8B8B",
+            "default": "#D28F75",
             "alpha": true
           },
           {
@@ -134,14 +134,14 @@
             "type": "color",
             "id": "primary_button_border",
             "label": "t:settings.borders",
-            "default": "#2D8B8B",
+            "default": "#D28F75",
             "alpha": true
           },
           {
             "type": "color",
             "id": "primary_button_hover_background",
             "label": "t:settings.hover_background",
-            "default": "#2D8B8B",
+            "default": "#B5734F",
             "alpha": true
           },
           {

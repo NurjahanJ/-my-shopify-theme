@@ -1,0 +1,33 @@
+{
+  "images": {
+    "hero-main": {
+      "filename": "hero-main.jpg",
+      "path": "C:\\Users\\Nurja\\OneDrive\\Documents\\IS373\\-my-shopify-theme\\assets\\hero-main.jpg",
+      "alt_text": "Cozy modern crafting room with premium crochet supplies and teal accents",
+      "generated": "2025-10-23T19:11:56.566929",
+      "shopify_ready": true
+    },
+    "value-yarn": {
+      "filename": "value-yarn.jpg",
+      "path": "C:\\Users\\Nurja\\OneDrive\\Documents\\IS373\\-my-shopify-theme\\assets\\value-yarn.jpg",
+      "alt_text": "Close-up of luxury alpaca and merino wool yarn fibers in teal tones",
+      "generated": "2025-10-23T20:03:10.142861",
+      "shopify_ready": true
+    },
+    "value-patterns": {
+      "filename": "value-patterns.jpg",
+      "path": "C:\\Users\\Nurja\\OneDrive\\Documents\\IS373\\-my-shopify-theme\\assets\\value-patterns.jpg",
+      "alt_text": "Professional crochet pattern diagrams with matching yarn and tools",
+      "generated": "2025-10-23T20:03:34.927189",
+      "shopify_ready": true
+    },
+    "value-complete": {
+      "filename": "value-complete.jpg",
+      "path": "C:\\Users\\Nurja\\OneDrive\\Documents\\IS373\\-my-shopify-theme\\assets\\value-complete.jpg",
+      "alt_text": "Complete crochet kit contents organized on white background",
+      "generated": "2025-10-23T20:03:59.310083",
+      "shopify_ready": true
+    }
+  },
+  "last_updated": "2025-10-23T20:03:59.310111"
+}
