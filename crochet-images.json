@@ -4,7 +4,7 @@
       "filename": "hero-main.jpg",
       "path": "C:\\Users\\Nurja\\OneDrive\\Documents\\IS373\\-my-shopify-theme\\assets\\hero-main.jpg",
       "alt_text": "Cozy modern crafting room with premium crochet supplies and teal accents",
-      "generated": "2025-10-23T20:24:14.482935",
+      "generated": "2025-10-23T23:59:09.996369",
       "shopify_ready": true
     },
     "value-yarn": {
@@ -27,7 +27,21 @@
       "alt_text": "Complete crochet kit contents organized on white background",
       "generated": "2025-10-23T20:03:59.310083",
       "shopify_ready": true
+    },
+    "logo-yarnstitch": {
+      "filename": "logo-yarnstitch.jpg",
+      "path": "C:\\Users\\Nurja\\OneDrive\\Documents\\IS373\\-my-shopify-theme\\assets\\logo-yarnstitch.jpg",
+      "alt_text": "Professional crochet image for logo yarnstitch",
+      "generated": "2025-10-23T21:27:32.276569",
+      "shopify_ready": true
+    },
+    "story-crafting": {
+      "filename": "story-crafting.jpg",
+      "path": "C:\\Users\\Nurja\\OneDrive\\Documents\\IS373\\-my-shopify-theme\\assets\\story-crafting.jpg",
+      "alt_text": "Professional crochet image for story crafting",
+      "generated": "2025-10-23T21:50:16.040475",
+      "shopify_ready": true
     }
   },
-  "last_updated": "2025-10-23T20:24:14.482951"
+  "last_updated": "2025-10-23T23:59:09.996409"
 }

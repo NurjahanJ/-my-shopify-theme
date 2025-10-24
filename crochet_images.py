@@ -51,6 +51,8 @@ class CrochetImageManager:
             
             'lifestyle-home': "Beautiful cozy living room with handmade crochet throw blanket in soft terracotta and cream tones on linen sofa, dried flowers, natural textures, warm natural lighting, artisan home decor aesthetic",
             
+            'logo-yarnstitch': "Elegant minimalist logo design for 'YarnStitch' - sophisticated typography with hand-drawn crochet hook integrated into the letter 'Y', soft terracotta brown color (#4A3C35), delicate yarn strand weaving through letters, artisan handmade aesthetic, clean white background, professional brand identity, vector-style illustration",
+            
             'lifestyle-crafting': "Person enjoying crochet in comfortable armchair by window, natural lighting, cozy atmosphere, teal yarn project in progress, peaceful crafting moment",
             
             'testimonial-1': "Happy woman in her 40s holding beautiful finished crochet blanket, genuine smile, cozy home background, natural lighting, authentic moment of pride and accomplishment",

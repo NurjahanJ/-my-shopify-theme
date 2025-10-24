@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
@@ -41,7 +50,10 @@
           }
         }
       },
-      "block_order": ["hero_text", "hero_button"],
+      "block_order": [
+        "hero_text",
+        "hero_button"
+      ],
       "settings": {
         "media_type_1": "image",
         "horizontal_alignment_flex_direction_column": "center",
@@ -49,12 +61,11 @@
         "gap": 32,
         "section_height": "large",
         "color_scheme": "scheme-1",
-        "padding-block-start": 60,
-        "padding-block-end": 60,
         "toggle_overlay": true,
-        "overlay_style": "gradient",
         "overlay_color": "#8B4B8C",
-        "overlay_opacity": 20
+        "overlay_style": "gradient",
+        "padding-block-start": 60,
+        "padding-block-end": 60
       }
     },
     "crochet-features": {
@@ -89,7 +100,12 @@
           }
         }
       },
-      "block_order": ["feature-1", "feature-2", "feature-3", "feature-4"],
+      "block_order": [
+        "feature-1",
+        "feature-2",
+        "feature-3",
+        "feature-4"
+      ],
       "settings": {
         "heading": "Why Choose Our Crochet Kits?",
         "description": "<p>Discover what makes our crochet kit boxes special</p>",
@@ -101,27 +117,8 @@
     "featured-collection": {
       "type": "product-list",
       "settings": {
-        "heading": "Featured Crochet Kits",
-        "heading_size": "h2",
-        "description": "<p>Our most popular monthly subscription boxes</p>",
         "collection": "",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "scheme-1",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": true,
-        "enable_quick_add": true,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 60,
-        "padding_bottom": 60
+        "color_scheme": "scheme-1"
       }
     },
     "crochet-testimonials": {
@@ -152,7 +149,11 @@
           }
         }
       },
-      "block_order": ["testimonial-1", "testimonial-2", "testimonial-3"],
+      "block_order": [
+        "testimonial-1",
+        "testimonial-2",
+        "testimonial-3"
+      ],
       "settings": {
         "heading": "What Our Crocheters Say",
         "description": "<p>Join thousands of happy crocheters who love our monthly kit boxes</p>",
@@ -165,11 +166,15 @@
       "type": "custom-liquid",
       "settings": {
         "custom_liquid": "<div style='background: linear-gradient(135deg, #8B4B8C 0%, #6B2C6D 100%); color: white; padding: 60px 20px; text-align: center; margin: 40px 0;'><div style='max-width: 600px; margin: 0 auto;'><h2 style='font-size: 2.5rem; margin-bottom: 1rem; color: white;'>Ready to Start Your Crochet Journey?</h2><p style='font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9;'>Join thousands of happy crocheters and get your first kit delivered next month!</p><a href='/collections/all' style='display: inline-block; background: white; color: #8B4B8C; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1rem; transition: transform 0.3s ease;' onmouseover='this.style.transform=\"translateY(-2px)\"' onmouseout='this.style.transform=\"translateY(0)\"'>Shop Crochet Kits Now</a></div></div>",
-        "color_scheme": "scheme-1",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "color_scheme": "scheme-1"
       }
     }
   },
-  "order": ["hero", "crochet-features", "featured-collection", "crochet-testimonials", "custom-cta"]
+  "order": [
+    "hero",
+    "crochet-features",
+    "featured-collection",
+    "crochet-testimonials",
+    "custom-cta"
+  ]
 }
