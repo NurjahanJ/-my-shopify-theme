@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -35,7 +44,6 @@
             "width_mobile": "fill",
             "custom_width_mobile": 100,
             "height": "fit",
-            "custom_height": 100,
             "details_position": "flex-start",
             "gap": 28,
             "sticky_details_desktop": true,
@@ -134,7 +142,10 @@
                   }
                 }
               },
-              "block_order": ["title", "price"]
+              "block_order": [
+                "title",
+                "price"
+              ]
             },
             "kit_contents": {
               "type": "text",
@@ -162,45 +173,28 @@
               }
             }
           },
-          "block_order": ["title_group", "kit_contents"]
+          "block_order": [
+            "title_group",
+            "kit_contents"
+          ]
         }
       },
-      "block_order": [],
       "settings": {
-        "content_direction": "row",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "center",
-        "vertical_alignment": "flex-start",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "center",
         "gap": 40,
-        "section_height": "fit",
-        "custom_section_height": 100,
         "color_scheme": "scheme-1",
         "padding-block-start": 40,
-        "padding-block-end": 40,
-        "padding-inline-start": 20,
-        "padding-inline-end": 20
+        "padding-block-end": 40
       }
     },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
-        "heading": "You might also love these kits",
-        "heading_size": "h2",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": true,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "color_scheme": "scheme-1"
       }
     }
   },
-  "order": ["main", "product-recommendations"]
+  "order": [
+    "main",
+    "product-recommendations"
+  ]
 }

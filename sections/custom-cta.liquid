@@ -1,0 +1,191 @@
+{% comment %}
+  Custom CTA Section - Shopify Compliant
+{% endcomment %}
+
+<div class="custom-cta-wrapper section-wrapper">
+  <div class="custom-cta-container">
+    <div class="custom-cta-decorations">
+      <div class="decoration-yarn">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 10C50 10 35 20 35 35C35 50 50 60 50 60C50 60 65 50 65 35C65 20 50 10 50 10Z" fill="#D28F75"/>
+          <path d="M25 40C25 40 15 30 30 30C45 30 55 40 55 40" stroke="#D28F75" stroke-width="3"/>
+        </svg>
+      </div>
+      <div class="decoration-circle">
+        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="40" cy="40" r="30" stroke="#D28F75" stroke-width="4" stroke-dasharray="8 4"/>
+        </svg>
+      </div>
+    </div>
+    
+    <div class="custom-cta-content">
+      <h2>{{ section.settings.heading | default: 'Find Your Next Project Box' }}</h2>
+      <p>{{ section.settings.description | default: 'Join thousands of makers finding joy in every stitch. Discover your next favorite project waiting to be created.' }}</p>
+      
+      <a href="{{ section.settings.button_link | default: '/collections/all' }}" class="cta-button">
+        {{ section.settings.button_text | default: 'Shop All Kits' }}
+      </a>
+    </div>
+  </div>
+</div>
+
+{% stylesheet %}
+  .custom-cta-wrapper {
+    background: linear-gradient(135deg, #FAF7F3 0%, #F5F2EE 100%);
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23E8E0D6' fill-opacity='0.2'%3E%3Cpath d='M20 20C25 15 35 15 40 20C45 25 45 35 40 40C35 45 25 45 20 40C15 35 15 25 20 20Z'/%3E%3Cpath d='M60 20C65 15 75 15 80 20C85 25 85 35 80 40C75 45 65 45 60 40C55 35 55 25 60 20Z'/%3E%3Cpath d='M20 60C25 55 35 55 40 60C45 65 45 75 40 80C35 85 25 85 20 80C15 75 15 65 20 60Z'/%3E%3Cpath d='M60 60C65 55 75 55 80 60C85 65 85 75 80 80C75 85 65 85 60 80C55 75 55 65 60 60Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    padding: clamp(60px, 8vw, 80px) 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .custom-cta-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .custom-cta-decorations {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+  }
+
+  .decoration-yarn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    opacity: 0.1;
+  }
+
+  .decoration-circle {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    opacity: 0.1;
+  }
+
+  .custom-cta-content {
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .custom-cta-content h2 {
+    font-size: clamp(2.5rem, 5vw, 3.2rem);
+    margin-bottom: 1.5rem;
+    color: #4A3C35;
+    font-weight: 500;
+    font-family: serif;
+    text-shadow: 0 2px 4px rgba(74,60,53,0.1);
+    line-height: 1.2;
+  }
+
+  .custom-cta-content p {
+    font-size: clamp(1.1rem, 3vw, 1.4rem);
+    margin-bottom: 3rem;
+    color: #6B5B54;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+  }
+
+  .cta-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #d84315 0%, #bf360c 100%);
+    color: white;
+    padding: 18px 40px;
+    border-radius: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 24px rgba(216,67,21,0.3);
+    border: 2px solid transparent;
+    margin-bottom: 2rem;
+  }
+
+  .cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(216,67,21,0.4);
+    border-color: rgba(216,67,21,0.3);
+    color: white;
+    text-decoration: none;
+  }
+
+  .cta-features {
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    color: #6d4c41;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(109,76,65,0.2);
+  }
+
+  .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .cta-features {
+      gap: 1rem;
+    }
+    
+    .feature-item {
+      font-size: 0.9rem;
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Custom CTA",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Find Your Next Project Box"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Join thousands of makers finding joy in every stitch. Discover your next favorite project waiting to be created."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Shop All Kits"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link",
+      "default": "/collections/all"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom CTA"
+    }
+  ]
+}
+{% endschema %}

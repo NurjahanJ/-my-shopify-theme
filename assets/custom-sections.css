@@ -1,0 +1,286 @@
+/* Custom Sections Styling - Shopify Compliant - Updated v2.0 */
+
+/* Modern About Us Section */
+.about-section-modern {
+  background: #faf8f5;
+  padding: clamp(80px, 10vw, 120px) 20px;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-text-side h2 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+  color: #5d4037;
+  font-weight: 400;
+  font-family: serif;
+  line-height: 1.2;
+}
+
+.about-tagline {
+  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+  color: #d84315;
+  margin-bottom: 2rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  color: #6d4c41;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+}
+
+.about-highlights {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.highlight-item {
+  text-align: center;
+}
+
+.highlight-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #d84315;
+  font-family: serif;
+}
+
+.highlight-text {
+  display: block;
+  font-size: 0.9rem;
+  color: #6d4c41;
+  margin-top: 0.5rem;
+}
+
+.about-image-side {
+  position: relative;
+}
+
+.about-image-container {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(93,64,55,0.15);
+}
+
+.about-image-container img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Modern Features Section */
+.features-section-modern {
+  background: linear-gradient(135deg, #f5f2ee 0%, #faf8f5 100%);
+  padding: clamp(80px, 10vw, 120px) 20px;
+}
+
+.features-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.features-container h2 {
+  font-size: clamp(2.5rem, 5vw, 3rem);
+  margin-bottom: 1rem;
+  color: #5d4037;
+  font-weight: 400;
+  font-family: serif;
+}
+
+.features-subtitle {
+  font-size: 1.2rem;
+  color: #6d4c41;
+  margin-bottom: 4rem;
+  opacity: 0.9;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  text-align: left;
+}
+
+.feature-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(93,64,55,0.08);
+  transition: transform 0.3s ease;
+}
+
+.feature-row:hover {
+  transform: translateY(-2px);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #faf8f5 0%, #f5f2ee 100%);
+  border-radius: 12px;
+}
+
+.feature-content h3 {
+  font-size: 1.4rem;
+  color: #5d4037;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.feature-content p {
+  color: #6d4c41;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Modern Testimonials Section */
+.testimonials-modern {
+  background: #faf8f5;
+  padding: clamp(80px, 10vw, 120px) 20px;
+}
+
+.testimonials-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimonials-container h2 {
+  font-size: clamp(2.5rem, 5vw, 3rem);
+  margin-bottom: 3rem;
+  color: #5d4037;
+  font-weight: 400;
+  font-family: serif;
+}
+
+.testimonial-highlight {
+  background: white;
+  border-radius: 20px;
+  padding: 3rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 10px 40px rgba(93,64,55,0.1);
+  position: relative;
+}
+
+.testimonial-quote {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: #5d4037;
+  line-height: 1.6;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-author {
+  color: #6d4c41;
+  font-size: 1rem;
+}
+
+.testimonial-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #d84315;
+  font-family: serif;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.9rem;
+  color: #6d4c41;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .about-image-container img {
+    height: 300px;
+  }
+  
+  .about-highlights {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .feature-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .feature-icon {
+    align-self: center;
+  }
+  
+  .testimonial-highlight {
+    padding: 2rem;
+  }
+  
+  .testimonial-stats {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* Additional Fixes */
+.about-image-container img {
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Ensure proper spacing for all sections */
+.about-section-modern,
+.features-section-modern,
+.testimonials-modern {
+  position: relative;
+  z-index: 1;
+}
+
+/* Fix any potential text overflow */
+.feature-content h3,
+.testimonial-quote,
+.about-text-side h2 {
+  word-wrap: break-word;
+  hyphens: auto;
+}

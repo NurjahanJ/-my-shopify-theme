@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
@@ -12,20 +21,21 @@
             "alignment": "center",
             "type_preset": "h1",
             "font": "var(--font-primary--family)",
-            "font_size": "",
+            "font_size": "clamp(2rem, 5vw, 3rem)",
             "line_height": "normal",
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
-            "color": "",
+            "color": "#FFFFFF",
             "background": false,
-            "background_color": "#00000026",
+            "background_color": "transparent",
             "corner_radius": 0,
             "padding-block-start": 0,
-            "padding-block-end": 20,
+            "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
-          }
+          },
+          "blocks": {}
         },
         "hero_button": {
           "type": "button",
@@ -33,66 +43,117 @@
             "label": "Shop Crochet Kits",
             "link": "shopify://collections/all",
             "open_in_new_tab": false,
-            "style_class": "button-primary",
+            "style_class": "button",
             "width": "fit-content",
             "custom_width": 100,
             "width_mobile": "fit-content",
             "custom_width_mobile": 100
+          },
+          "blocks": {}
+        },
+        "hero_features": {
+          "type": "text",
+          "settings": {
+            "text": "<p>✓ Free shipping over $50 &nbsp;&nbsp;&nbsp; ★ Expert support &nbsp;&nbsp;&nbsp; ✓ Cancel anytime</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-primary--family)",
+            "font_size": "1.1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "#ffffff",
+            "background": false,
+            "background_color": "transparent",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           }
         }
       },
-      "block_order": ["hero_text", "hero_button"],
+      "block_order": [
+        "hero_text",
+        "hero_button",
+        "hero_features"
+      ],
       "settings": {
         "media_type_1": "image",
+        "image_1": "shopify://shop_images/hero-main.jpg",
+        "media_type_2": "image",
+        "link": "",
+        "open_in_new_tab": false,
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 32,
+        "gap": 24,
+        "section_width": "page-width",
         "section_height": "large",
+        "section_height_custom": 50,
         "color_scheme": "scheme-1",
-        "padding-block-start": 80,
-        "padding-block-end": 80,
         "toggle_overlay": true,
-        "overlay_style": "gradient",
-        "overlay_color": "#D28F75",
-        "overlay_opacity": 40
+        "overlay_color": "rgba(0, 0, 0, 0.6)",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "blurred_reflection": false,
+        "reflection_opacity": 75,
+        "padding-block-start": 60,
+        "padding-block-end": 60
       }
     },
-    "seasonal-kits": {
+    "about-us": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div style='background: #FAF7F3; padding: 100px 20px;'><div style='max-width: 1200px; margin: 0 auto; text-align: center;'><h2 style='font-size: 3rem; margin-bottom: 1rem; color: #4A3C35; font-weight: 400; font-family: serif;'>Featured Seasonal Kits</h2><p style='font-size: 1.2rem; color: #6B5B54; margin-bottom: 4rem; max-width: 600px; margin-left: auto; margin-right: auto;'>Curated collections that celebrate the beauty of each season</p><div style='display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem; margin-top: 3rem;'><div style='background: white; border-radius: 24px; overflow: hidden; box-shadow: 0 12px 40px rgba(74,60,53,0.08); transition: transform 0.3s ease;' onmouseover='this.style.transform=\"translateY(-8px)\"' onmouseout='this.style.transform=\"translateY(0)\"'><div style='height: 280px; overflow: hidden; position: relative;'><img src='/cdn/shop/files/Spring.png' alt='Spring Crochet Kit: Bloom Blanket' style='width: 100%; height: 100%; object-fit: cover; object-position: center;' /></div><div style='padding: 2.5rem;'><h3 style='font-size: 1.8rem; color: #4A3C35; margin-bottom: 1rem; font-weight: 600;'>Spring Bloom Kit</h3><p style='color: #6B5B54; line-height: 1.6; margin-bottom: 2rem; font-size: 1.1rem;'>Fresh pastels and delicate stitches to welcome the season of renewal</p><a href='/products/spring-crochet-kit-bloom-blanket' style='display: inline-block; background: #D28F75; color: white; padding: 14px 28px; border-radius: 12px; text-decoration: none; font-weight: 600; transition: background 0.3s ease;' onmouseover='this.style.background=\"#B5734F\"' onmouseout='this.style.background=\"#D28F75\"'>View Kit</a></div></div><div style='background: white; border-radius: 24px; overflow: hidden; box-shadow: 0 12px 40px rgba(74,60,53,0.08); transition: transform 0.3s ease;' onmouseover='this.style.transform=\"translateY(-8px)\"' onmouseout='this.style.transform=\"translateY(0)\"'><div style='height: 280px; overflow: hidden; position: relative;'><img src='/cdn/shop/files/Summer.png' alt='Summer Crochet Kit: Sunshine Blanket' style='width: 100%; height: 100%; object-fit: cover; object-position: center;' /></div><div style='padding: 2.5rem;'><h3 style='font-size: 1.8rem; color: #4A3C35; margin-bottom: 1rem; font-weight: 600;'>Summer Breeze Kit</h3><p style='color: #6B5B54; line-height: 1.6; margin-bottom: 2rem; font-size: 1.1rem;'>Light, airy projects perfect for warm days and gentle evenings</p><a href='/products/summer-crochet-kit-sunshine-blanket' style='display: inline-block; background: #D28F75; color: white; padding: 14px 28px; border-radius: 12px; text-decoration: none; font-weight: 600; transition: background 0.3s ease;' onmouseover='this.style.background=\"#B5734F\"' onmouseout='this.style.background=\"#D28F75\"'>View Kit</a></div></div><div style='background: white; border-radius: 24px; overflow: hidden; box-shadow: 0 12px 40px rgba(74,60,53,0.08); transition: transform 0.3s ease;' onmouseover='this.style.transform=\"translateY(-8px)\"' onmouseout='this.style.transform=\"translateY(0)\"'><div style='height: 280px; overflow: hidden; position: relative;'><img src='/cdn/shop/files/Winter.png' alt='Winter Crochet Kit: Cozy Cabin Blanket' style='width: 100%; height: 100%; object-fit: cover; object-position: center;' /></div><div style='padding: 2.5rem;'><h3 style='font-size: 1.8rem; color: #4A3C35; margin-bottom: 1rem; font-weight: 600;'>Winter Comfort Kit</h3><p style='color: #6B5B54; line-height: 1.6; margin-bottom: 2rem; font-size: 1.1rem;'>Cozy textures and warming colors for the season of togetherness</p><a href='/products/winter-crochet-kit-cozy-cabin-blanket' style='display: inline-block; background: #D28F75; color: white; padding: 14px 28px; border-radius: 12px; text-decoration: none; font-weight: 600; transition: background 0.3s ease;' onmouseover='this.style.background=\"#B5734F\"' onmouseout='this.style.background=\"#D28F75\"'>View Kit</a></div></div></div></div></div>",
+        "custom_liquid": "<style>.about-section-modern{background:#faf8f5;padding:clamp(80px,10vw,120px) 20px}.about-container{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}.about-text-side h2{font-size:clamp(2.5rem,5vw,3.5rem);margin-bottom:1rem;color:#5d4037;font-weight:400;font-family:serif;line-height:1.2}.about-tagline{font-size:clamp(1.1rem,2.5vw,1.3rem);color:#d84315;margin-bottom:2rem;font-style:italic;font-weight:500}.about-description{font-size:1.1rem;color:#6d4c41;line-height:1.7;margin-bottom:3rem}.about-highlights{display:flex;gap:2rem;flex-wrap:wrap}.highlight-item{text-align:center}.highlight-number{display:block;font-size:2rem;font-weight:700;color:#d84315;font-family:serif}.highlight-text{display:block;font-size:0.9rem;color:#6d4c41;margin-top:0.5rem}.about-image-container{border-radius:20px;overflow:hidden;box-shadow:0 20px 60px rgba(93,64,55,0.15)}.about-image-container img{width:100%;height:400px;object-fit:cover}@media(max-width:768px){.about-container{grid-template-columns:1fr;gap:3rem}.about-image-container img{height:300px}}</style><div class='about-section-modern'><div class='about-container'><div class='about-text-side'><h2>About YarnStitch</h2><p class='about-tagline'>Where passion meets craftsmanship in every stitch</p><p class='about-description'>Founded by passionate crocheters who believe in the magic of handmade, YarnStitch curates premium yarns and thoughtfully designed patterns. We're dedicated to making crochet accessible and enjoyable for makers of all skill levels - from beginner-friendly projects to intricate designs for advanced crafters.</p><div class='about-highlights'><div class='highlight-item'><span class='highlight-number'>500+</span><span class='highlight-text'>Happy Crafters</span></div><div class='highlight-item'><span class='highlight-number'>50+</span><span class='highlight-text'>Unique Kits</span></div><div class='highlight-item'><span class='highlight-number'>5★</span><span class='highlight-text'>Average Rating</span></div></div></div><div class='about-image-side'><div class='about-image-container'><img src='{{ 'hero-main.jpg' | asset_url }}' alt='YarnStitch crafting workspace with premium crochet supplies' /></div></div></div></div>",
         "color_scheme": "scheme-1",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     },
-    "value-props": {
+    "features": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div style='background: linear-gradient(135deg, #FAF7F3 0%, #F5F2EE 100%); background-image: url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23E8E0D6' fill-opacity='0.3'%3E%3Ccircle cx='7' cy='7' r='1'/%3E%3Ccircle cx='53' cy='7' r='1'/%3E%3Ccircle cx='7' cy='53' r='1'/%3E%3Ccircle cx='53' cy='53' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\"); padding: 120px 20px;'><div style='max-width: 1200px; margin: 0 auto; text-align: center;'><h2 style='font-size: 3.2rem; margin-bottom: 1rem; color: #4A3C35; font-weight: 400; font-family: serif; text-shadow: 0 2px 4px rgba(74,60,53,0.1);'>Why You'll Love Our Kits</h2><p style='font-size: 1.3rem; color: #6B5B54; margin-bottom: 5rem; max-width: 650px; margin-left: auto; margin-right: auto; line-height: 1.6;'>Everything you need to create beautiful, handmade treasures with love</p><div style='display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 3.5rem; margin-top: 4rem;'><div style='background: #FEFCFA; border: 2px solid #F0EAE2; border-radius: 20px; padding: 3rem 2.5rem; text-align: center; box-shadow: 0 8px 32px rgba(74,60,53,0.08), 0 2px 8px rgba(74,60,53,0.04); transition: all 0.4s ease; position: relative; overflow: hidden;' onmouseover='this.style.transform=\"translateY(-6px)\"; this.style.boxShadow=\"0 16px 48px rgba(74,60,53,0.12), 0 4px 16px rgba(74,60,53,0.06)\";' onmouseout='this.style.transform=\"translateY(0)\"; this.style.boxShadow=\"0 8px 32px rgba(74,60,53,0.08), 0 2px 8px rgba(74,60,53,0.04)\";'><div style='position: absolute; top: -10px; right: -10px; width: 40px; height: 40px; background: radial-gradient(circle, #FFECE2 0%, transparent 70%); opacity: 0.6;'></div><div style='width: 140px; height: 140px; background: linear-gradient(135deg, #FFECE2 0%, #F5E6D8 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 2.5rem; position: relative; border: 3px solid #F0EAE2; box-shadow: inset 0 2px 8px rgba(245,198,170,0.3); overflow: hidden;'><img src='{{ \"value-yarn.jpg\" | asset_url }}' alt='Close-up of luxury yarn fibers' style='width: 100%; height: 100%; object-fit: cover; border-radius: 50%;' /></div><h3 style='font-size: 2rem; margin-bottom: 1.8rem; color: #4A3C35; font-weight: 600; font-family: serif;'>Premium Materials</h3><p style='color: #6B5B54; line-height: 1.8; font-size: 1.15rem; max-width: 280px; margin: 0 auto;'>Hand-selected yarns and tools that feel as good as they look. Quality you can touch and trust.</p></div><div style='background: #FEFCFA; border: 2px solid #F0EAE2; border-radius: 20px; padding: 3rem 2.5rem; text-align: center; box-shadow: 0 8px 32px rgba(74,60,53,0.08), 0 2px 8px rgba(74,60,53,0.04); transition: all 0.4s ease; position: relative; overflow: hidden;' onmouseover='this.style.transform=\"translateY(-6px)\"; this.style.boxShadow=\"0 16px 48px rgba(74,60,53,0.12), 0 4px 16px rgba(74,60,53,0.06)\";' onmouseout='this.style.transform=\"translateY(0)\"; this.style.boxShadow=\"0 8px 32px rgba(74,60,53,0.08), 0 2px 8px rgba(74,60,53,0.04)\";'><div style='position: absolute; top: -10px; left: -10px; width: 40px; height: 40px; background: radial-gradient(circle, #F5C6AA 0%, transparent 70%); opacity: 0.6;'></div><div style='width: 140px; height: 140px; background: linear-gradient(135deg, #F5C6AA 0%, #E8B896 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 2.5rem; position: relative; border: 3px solid #F0EAE2; box-shadow: inset 0 2px 8px rgba(232,184,150,0.3); overflow: hidden;'><img src='{{ \"value-patterns.jpg\" | asset_url }}' alt='Professional crochet pattern diagrams' style='width: 100%; height: 100%; object-fit: cover; border-radius: 50%;' /></div><h3 style='font-size: 2rem; margin-bottom: 1.8rem; color: #4A3C35; font-weight: 600; font-family: serif;'>Thoughtfully Curated</h3><p style='color: #6B5B54; line-height: 1.8; font-size: 1.15rem; max-width: 280px; margin: 0 auto;'>Each kit is lovingly assembled with patterns, colors, and textures that work beautifully together.</p></div><div style='background: #FEFCFA; border: 2px solid #F0EAE2; border-radius: 20px; padding: 3rem 2.5rem; text-align: center; box-shadow: 0 8px 32px rgba(74,60,53,0.08), 0 2px 8px rgba(74,60,53,0.04); transition: all 0.4s ease; position: relative; overflow: hidden;' onmouseover='this.style.transform=\"translateY(-6px)\"; this.style.boxShadow=\"0 16px 48px rgba(74,60,53,0.12), 0 4px 16px rgba(74,60,53,0.06)\";' onmouseout='this.style.transform=\"translateY(0)\"; this.style.boxShadow=\"0 8px 32px rgba(74,60,53,0.08), 0 2px 8px rgba(74,60,53,0.04)\";'><div style='position: absolute; bottom: -10px; right: -10px; width: 40px; height: 40px; background: radial-gradient(circle, #B5C7B2 0%, transparent 70%); opacity: 0.6;'></div><div style='width: 140px; height: 140px; background: linear-gradient(135deg, #B5C7B2 0%, #A8BBA5 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 2.5rem; position: relative; border: 3px solid #F0EAE2; box-shadow: inset 0 2px 8px rgba(181,199,178,0.3); overflow: hidden;'><img src='{{ \"value-complete.jpg\" | asset_url }}' alt='Complete crochet kit contents' style='width: 100%; height: 100%; object-fit: cover; border-radius: 50%;' /></div><h3 style='font-size: 2rem; margin-bottom: 1.8rem; color: #4A3C35; font-weight: 600; font-family: serif;'>Joyful Creating</h3><p style='color: #6B5B54; line-height: 1.8; font-size: 1.15rem; max-width: 280px; margin: 0 auto;'>From first stitch to finished piece, experience the meditative joy of making something with your hands.</p></div></div></div></div>",
+        "custom_liquid": "<style>.features-grid-section{background:#fff;padding:clamp(60px,8vw,100px) 20px;position:relative}.features-grid-section::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:url('data:image/svg+xml,%3Csvg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"%23faf8f5\" fill-opacity=\"0.4\"%3E%3Ccircle cx=\"20\" cy=\"20\" r=\"2\"/%3E%3C/g%3E%3C/svg%3E');z-index:0}.features-grid-container{max-width:1200px;margin:0 auto;position:relative;z-index:1}.features-grid-header{text-align:center;margin-bottom:4rem}.features-grid-header h2{font-size:clamp(2.2rem,4vw,2.8rem);color:#5d4037;font-weight:300;font-family:serif;margin-bottom:1rem}.features-grid-header p{font-size:1.1rem;color:#6d4c41;max-width:500px;margin:0 auto;opacity:0.8}.features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2rem}.feature-card{background:linear-gradient(135deg,#faf8f5 0%,#f8f5f1 100%);border-radius:24px;padding:3rem 2rem;text-align:center;position:relative;overflow:hidden;transition:all 0.4s ease;border:1px solid rgba(93,64,55,0.1)}.feature-card::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(216,67,21,0.05) 0%,transparent 70%);transform:scale(0);transition:transform 0.6s ease}.feature-card:hover::before{transform:scale(1)}.feature-card:hover{transform:translateY(-8px);box-shadow:0 20px 60px rgba(93,64,55,0.15)}.feature-icon-large{font-size:4rem;margin-bottom:1.5rem;display:block;filter:drop-shadow(0 4px 8px rgba(93,64,55,0.1))}.feature-card h3{font-size:1.6rem;color:#5d4037;margin-bottom:1rem;font-weight:600;position:relative;z-index:2}.feature-card p{color:#6d4c41;line-height:1.7;font-size:1rem;position:relative;z-index:2}@media(max-width:768px){.features-grid{grid-template-columns:1fr;gap:1.5rem}.feature-card{padding:2.5rem 1.5rem}}</style><div class='features-grid-section'><div class='features-grid-container'><div class='features-grid-header'><h2>Why Crafters Choose YarnStitch</h2><p>Discover what makes our crochet kits the perfect choice for your creative journey</p></div><div class='features-grid'><div class='feature-card'><span class='feature-icon-large'>🧶</span><h3>Premium Materials</h3><p>Hand-selected yarns from trusted suppliers. Each skein is chosen for its softness, durability, and beautiful color saturation that brings your projects to life.</p></div><div class='feature-card'><span class='feature-icon-large'>📐</span><h3>Expert Patterns</h3><p>Professionally designed patterns with clear instructions, helpful diagrams, and video tutorials to guide you through every stitch with confidence.</p></div><div class='feature-card'><span class='feature-icon-large'>🎁</span><h3>Complete Kits</h3><p>Everything you need in one beautiful package - yarns, tools, patterns, and accessories. No hunting for supplies or wondering what to buy next.</p></div></div></div></div>",
         "color_scheme": "scheme-1",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     },
     "testimonials": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div style='background: linear-gradient(135deg, #F5F2EE 0%, #FAF7F3 100%); padding: 100px 20px; overflow: hidden;'><div style='max-width: 1200px; margin: 0 auto; text-align: center;'><h2 style='font-size: 3.2rem; margin-bottom: 1rem; color: #4A3C35; font-weight: 400; font-family: serif; text-shadow: 0 2px 4px rgba(74,60,53,0.1);'>What Our Makers Say</h2><p style='font-size: 1.3rem; color: #6B5B54; margin-bottom: 4rem; max-width: 650px; margin-left: auto; margin-right: auto; line-height: 1.6;'>Real stories from our crafting community</p><div style='display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; margin-top: 3rem;'><div style='background: linear-gradient(135deg, #FFECE2 0%, #F5E6D8 100%); border-radius: 20px; padding: 2.5rem; text-align: left; box-shadow: 0 8px 32px rgba(74,60,53,0.08); position: relative; overflow: hidden;'><div style='position: absolute; top: -15px; right: -15px; width: 60px; height: 60px; background: radial-gradient(circle, rgba(245,198,170,0.3) 0%, transparent 70%);'></div><div style='display: flex; align-items: center; margin-bottom: 1.5rem;'><div style='width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #D28F75 0%, #B5734F 100%); display: flex; align-items: center; justify-content: center; margin-right: 1rem; box-shadow: 0 4px 12px rgba(210,143,117,0.3);'><svg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M15 6C18 6 21 9 21 13C21 17 18 20 15 20C12 20 9 17 9 13C9 9 12 6 15 6Z' fill='%23FEFCFA'/><path d='M10 24C10 21 12 19 15 19C18 19 20 21 20 24' stroke='%23FEFCFA' stroke-width='1.5' stroke-linecap='round'/></svg></div><div><h4 style='font-size: 1.3rem; color: #4A3C35; font-weight: 600; margin-bottom: 0.3rem;'>Sarah M.</h4><div style='display: flex; margin-bottom: 0.3rem;'><span style='color: #E6B800; font-size: 1rem;'>★★★★★</span></div><p style='color: #6B5B54; font-size: 0.9rem; opacity: 0.8;'>Florida • 2 years crafting</p></div></div><blockquote style='font-size: 1.1rem; line-height: 1.6; color: #4A3C35; font-style: italic; position: relative;'>\"The quality of these yarns is incredible! My finished blanket feels like a warm hug. The patterns are so clear, even as a beginner I felt confident every step of the way.\"</blockquote></div><div style='background: linear-gradient(135deg, #F5C6AA 0%, #E8B896 100%); border-radius: 20px; padding: 2.5rem; text-align: left; box-shadow: 0 8px 32px rgba(74,60,53,0.08); position: relative; overflow: hidden;'><div style='position: absolute; bottom: -15px; left: -15px; width: 60px; height: 60px; background: radial-gradient(circle, rgba(232,184,150,0.3) 0%, transparent 70%);'></div><div style='display: flex; align-items: center; margin-bottom: 1.5rem;'><div style='width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #D28F75 0%, #B5734F 100%); display: flex; align-items: center; justify-content: center; margin-right: 1rem; box-shadow: 0 4px 12px rgba(210,143,117,0.3);'><svg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M15 6C18 6 21 9 21 13C21 17 18 20 15 20C12 20 9 17 9 13C9 9 12 6 15 6Z' fill='%23FEFCFA'/><path d='M10 24C10 21 12 19 15 19C18 19 20 21 20 24' stroke='%23FEFCFA' stroke-width='1.5' stroke-linecap='round'/></svg></div><div><h4 style='font-size: 1.3rem; color: #4A3C35; font-weight: 600; margin-bottom: 0.3rem;'>Jennifer L.</h4><div style='display: flex; margin-bottom: 0.3rem;'><span style='color: #E6B800; font-size: 1rem;'>★★★★★</span></div><p style='color: #6B5B54; font-size: 0.9rem; opacity: 0.8;'>Texas • Advanced crocheter</p></div></div><blockquote style='font-size: 1.1rem; line-height: 1.6; color: #4A3C35; font-style: italic; position: relative;'>\"I've tried many subscription boxes, but this one truly understands crafters. The video tutorials saved me hours, and the community support is amazing!\"</blockquote></div><div style='background: linear-gradient(135deg, #B5C7B2 0%, #A8BBA5 100%); border-radius: 20px; padding: 2.5rem; text-align: left; box-shadow: 0 8px 32px rgba(74,60,53,0.08); position: relative; overflow: hidden;'><div style='position: absolute; top: -15px; left: -15px; width: 60px; height: 60px; background: radial-gradient(circle, rgba(181,199,178,0.3) 0%, transparent 70%);'></div><div style='display: flex; align-items: center; margin-bottom: 1.5rem;'><div style='width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #D28F75 0%, #B5734F 100%); display: flex; align-items: center; justify-content: center; margin-right: 1rem; box-shadow: 0 4px 12px rgba(210,143,117,0.3);'><svg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M15 6C18 6 21 9 21 13C21 17 18 20 15 20C12 20 9 17 9 13C9 9 12 6 15 6Z' fill='%23FEFCFA'/><path d='M10 24C10 21 12 19 15 19C18 19 20 21 20 24' stroke='%23FEFCFA' stroke-width='1.5' stroke-linecap='round'/></svg></div><div><h4 style='font-size: 1.3rem; color: #4A3C35; font-weight: 600; margin-bottom: 0.3rem;'>Maria R.</h4><div style='display: flex; margin-bottom: 0.3rem;'><span style='color: #E6B800; font-size: 1rem;'>★★★★★</span></div><p style='color: #6B5B54; font-size: 0.9rem; opacity: 0.8;'>New York • Gift maker</p></div></div><blockquote style='font-size: 1.1rem; line-height: 1.6; color: #4A3C35; font-style: italic; position: relative;'>\"Every month feels like Christmas! The thoughtful curation and beautiful packaging make these kits perfect for gifts. My family loves the cozy scarves I make.\"</blockquote></div></div></div></div>",
+        "custom_liquid": "<style>.testimonials-modern{background:#faf8f5;padding:clamp(80px,10vw,120px) 20px}.testimonials-container{max-width:900px;margin:0 auto;text-align:center}.testimonials-container h2{font-size:clamp(2.5rem,5vw,3rem);margin-bottom:3rem;color:#5d4037;font-weight:400;font-family:serif}.testimonial-carousel{position:relative;margin-bottom:3rem;overflow:hidden;border-radius:20px}.testimonial-track{display:flex;transition:transform 0.8s ease-in-out;width:400%}.testimonial-slide{width:25%;flex-shrink:0;background:white;padding:3rem;box-shadow:0 10px 40px rgba(93,64,55,0.1);position:relative;margin:0}.testimonial-quote{font-size:clamp(1.2rem,3vw,1.5rem);color:#5d4037;line-height:1.6;font-style:italic;margin-bottom:1.5rem;min-height:4em}.testimonial-author{color:#6d4c41;font-size:1rem;font-weight:500}.testimonial-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:2rem;margin-top:2rem}.stat-item{text-align:center}.stat-number{display:block;font-size:2.5rem;font-weight:700;color:#d84315;font-family:serif;margin-bottom:0.5rem}.stat-label{display:block;font-size:0.9rem;color:#6d4c41;text-transform:uppercase;letter-spacing:0.5px}@media(max-width:768px){.testimonial-slide{padding:2rem}.testimonial-stats{grid-template-columns:1fr;gap:1.5rem}.testimonial-quote{min-height:auto}}</style><div class='testimonials-modern'><div class='testimonials-container'><h2>Loved by Makers Everywhere</h2><div class='testimonial-carousel' id='testimonialCarousel'><div class='testimonial-track' id='testimonialTrack'><div class='testimonial-slide'><div class='testimonial-quote'>The quality of these yarns is incredible! My finished blanket feels like a warm hug. The patterns are so clear, even as a beginner I felt confident every step of the way.</div><div class='testimonial-author'><strong>Sarah M.</strong> • Florida • ★★★★★</div></div><div class='testimonial-slide'><div class='testimonial-quote'>I have tried many subscription boxes, but YarnStitch truly understands what crafters want. The video tutorials saved me hours, and the community support is amazing!</div><div class='testimonial-author'><strong>Jennifer L.</strong> • Texas • ★★★★★</div></div><div class='testimonial-slide'><div class='testimonial-quote'>Every project looks like something from a boutique! The thoughtful curation and beautiful packaging make these kits perfect for gifts. My family loves what I create!</div><div class='testimonial-author'><strong>Maria R.</strong> • New York • ★★★★★</div></div><div class='testimonial-slide'><div class='testimonial-quote'>As an advanced crocheter, I was skeptical about kit boxes. But the complexity and quality of YarnStitch patterns challenged me in the best way. Absolutely love it!</div><div class='testimonial-author'><strong>Patricia K.</strong> • California • ★★★★★</div></div></div></div><div class='testimonial-stats'><div class='stat-item'><span class='stat-number'>4.9/5</span><span class='stat-label'>Average Rating</span></div><div class='stat-item'><span class='stat-number'>500+</span><span class='stat-label'>Happy Customers</span></div><div class='stat-item'><span class='stat-number'>98%</span><span class='stat-label'>Would Recommend</span></div></div></div></div><script>let currentTestimonial=0;const totalTestimonials=4;function showTestimonial(n){const track=document.getElementById('testimonialTrack');if(track){track.style.transform='translateX(-' + (n*25) + '%)';}}function nextTestimonial(){currentTestimonial=(currentTestimonial+1)%totalTestimonials;showTestimonial(currentTestimonial);}setInterval(nextTestimonial,5000);</script>",
         "color_scheme": "scheme-1",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     },
     "final-cta": {
-      "type": "custom-liquid",
+      "type": "custom-cta",
       "settings": {
-        "custom_liquid": "<div style='background: linear-gradient(135deg, #FAF7F3 0%, #F5F2EE 100%); background-image: url(\"data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23E8E0D6' fill-opacity='0.2'%3E%3Cpath d='M20 20C25 15 35 15 40 20C45 25 45 35 40 40C35 45 25 45 20 40C15 35 15 25 20 20Z'/%3E%3Cpath d='M60 20C65 15 75 15 80 20C85 25 85 35 80 40C75 45 65 45 60 40C55 35 55 25 60 20Z'/%3E%3Cpath d='M20 60C25 55 35 55 40 60C45 65 45 75 40 80C35 85 25 85 20 80C15 75 15 65 20 60Z'/%3E%3Cpath d='M60 60C65 55 75 55 80 60C85 65 85 75 80 80C75 85 65 85 60 80C55 75 55 65 60 60Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\"); padding: 120px 20px; text-align: center; position: relative; overflow: hidden;'><div style='position: absolute; top: 20px; left: 20px; width: 100px; height: 100px; opacity: 0.1;'><svg viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M50 10C50 10 35 20 35 35C35 50 50 60 50 60C50 60 65 50 65 35C65 20 50 10 50 10Z' fill='%23D28F75'/><path d='M25 40C25 40 15 30 30 30C45 30 55 40 55 40' stroke='%23D28F75' stroke-width='3'/></svg></div><div style='position: absolute; bottom: 20px; right: 20px; width: 80px; height: 80px; opacity: 0.1;'><svg viewBox='0 0 80 80' fill='none' xmlns='http://www.w3.org/2000/svg'><circle cx='40' cy='40' r='30' stroke='%23D28F75' stroke-width='4' stroke-dasharray='8 4'/></svg></div><div style='max-width: 700px; margin: 0 auto;'><h2 style='font-size: 3.5rem; margin-bottom: 1.5rem; color: #4A3C35; font-weight: 400; font-family: serif; text-shadow: 0 2px 4px rgba(74,60,53,0.1);'>Find Your Next Project Box</h2><p style='font-size: 1.4rem; margin-bottom: 3rem; color: #6B5B54; line-height: 1.7; max-width: 600px; margin-left: auto; margin-right: auto;'>Join thousands of makers finding joy in every stitch. Discover your next favorite project waiting to be created.</p><a href='/collections/all' style='display: inline-block; background: linear-gradient(135deg, #D28F75 0%, #B5734F 100%); color: white; padding: 18px 40px; border-radius: 16px; text-decoration: none; font-weight: 600; font-size: 1.2rem; transition: all 0.3s ease; box-shadow: 0 8px 24px rgba(210,143,117,0.3); border: 2px solid transparent;' onmouseover='this.style.transform=\"translateY(-3px)\"; this.style.boxShadow=\"0 12px 32px rgba(210,143,117,0.4)\"; this.style.borderColor=\"#F5C6AA\";' onmouseout='this.style.transform=\"translateY(0)\"; this.style.boxShadow=\"0 8px 24px rgba(210,143,117,0.3)\"; this.style.borderColor=\"transparent\";'>Shop All Kits</a><div style='margin-top: 2.5rem; font-size: 1rem; color: #8B7B73; display: flex; align-items: center; justify-content: center; gap: 2rem; flex-wrap: wrap;'><span style='display: flex; align-items: center; gap: 0.5rem;'><svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z' stroke='%23D28F75' stroke-width='2'/><path d='M6 10L9 13L14 7' stroke='%23D28F75' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>Free shipping over $50</span><span style='display: flex; align-items: center; gap: 0.5rem;'><svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z' stroke='%23D28F75' stroke-width='2'/><path d='M6 10L9 13L14 7' stroke='%23D28F75' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>Cancel anytime</span><span style='display: flex; align-items: center; gap: 0.5rem;'><svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z' stroke='%23D28F75' stroke-width='2'/><path d='M6 10L9 13L14 7' stroke='%23D28F75' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>Expert support</span></div></div></div>",
-        "color_scheme": "scheme-1",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "heading": "Find Your Next Project Box",
+        "description": "Join thousands of makers finding joy in every stitch. Discover your next favorite project waiting to be created.",
+        "button_text": "Shop All Kits",
+        "button_link": "/collections/all"
       }
     }
   },
-  "order": ["hero", "seasonal-kits", "value-props", "testimonials", "final-cta"]
+  "order": [
+    "hero",
+    "about-us",
+    "features",
+    "testimonials",
+    "final-cta"
+  ]
 }
