@@ -65,7 +65,7 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "balance",
-            "color": "var(--color-primary)",
+            "color": "#FFFFFF",
             "background": false,
             "background_color": "#3d1a0f",
             "corner_radius": 26,
