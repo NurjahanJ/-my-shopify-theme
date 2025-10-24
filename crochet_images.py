@@ -35,8 +35,6 @@ class CrochetImageManager:
         self.prompts = {
             'hero-main': "Cozy artisan crafting flatlay with premium crochet supplies on creamy linen fabric, warm terracotta accents (#D28F75), soft blush and sage green yarns, handcrafted wooden crochet hooks, delicate finished projects, dried flowers, warm natural lighting, cozy handmade aesthetic, artisan lifestyle photography",
             
-            'hero-spread': "Beautiful flat lay of premium crochet supplies spread out on warm wooden table, colorful yarn balls in terracotta, sage green, cream and blush tones, wooden crochet hooks arranged artistically, crochet patterns and instruction booklets, stitch markers, measuring tape, scissors, finished crochet swatches, cozy crafting atmosphere with soft natural lighting, artisan aesthetic, professional lifestyle photography",
-            
             'hero-alt': "Gentle hands working on beautiful crochet project with soft blush-colored yarn, detailed stitchwork visible, cozy artisan home setting with warm natural lighting, ceramic mug nearby, peaceful crafting moment, warm lifestyle photography",
             
             'value-yarn': "Extreme close-up of luxury yarn fibers showing incredible texture, mix of alpaca and merino wool in soft blush, sage green, and cream colors, individual fibers visible, warm natural lighting, artistic macro photography",
