@@ -85,7 +85,7 @@ shopify theme share --store modern-stitch-fiber.myshopify.com
 ## 🎯 Store Information
 
 - **Store URL**: modern-stitch-fiber.myshopify.com
-- **Theme**: Horizon (#181391360298)
+- **Theme**: Horizon - Live
 - **Framework**: Shopify Liquid + Shopify 2.0
 
 ## 📚 Resources
