@@ -41,7 +41,56 @@
       "alt_text": "Professional crochet image for story crafting",
       "generated": "2025-10-23T21:50:16.040475",
       "shopify_ready": true
+    },
+    "finished-blanket": {
+      "filename": "finished-blanket.jpg",
+      "path": "C:\\Users\\Nurja\\OneDrive\\Documents\\IS373\\-my-shopify-theme\\assets\\finished-blanket.jpg",
+      "alt_text": "Finished crochet blanket in soft blush and cream colors",
+      "generated": "2025-10-24T09:05:46.328629",
+      "shopify_ready": true
+    },
+    "finished-scarf": {
+      "filename": "finished-scarf.jpg",
+      "path": "C:\\Users\\Nurja\\OneDrive\\Documents\\IS373\\-my-shopify-theme\\assets\\finished-scarf.jpg",
+      "alt_text": "Elegant finished crochet scarf in sage green with lace pattern",
+      "generated": "2025-10-24T09:06:33.146216",
+      "shopify_ready": true
+    },
+    "finished-bag": {
+      "filename": "finished-bag.jpg",
+      "path": "C:\\Users\\Nurja\\OneDrive\\Documents\\IS373\\-my-shopify-theme\\assets\\finished-bag.jpg",
+      "alt_text": "Handmade crochet tote bag in teal with geometric pattern",
+      "generated": "2025-10-24T09:07:02.327095",
+      "shopify_ready": true
+    },
+    "finished-hat": {
+      "filename": "finished-hat.jpg",
+      "path": "C:\\Users\\Nurja\\OneDrive\\Documents\\IS373\\-my-shopify-theme\\assets\\finished-hat.jpg",
+      "alt_text": "Stylish finished crochet beanie hat in terracotta brown",
+      "generated": "2025-10-24T09:19:10.147124",
+      "shopify_ready": true
+    },
+    "product-beginner": {
+      "filename": "product-beginner.jpg",
+      "path": "C:\\Users\\Nurja\\OneDrive\\Documents\\IS373\\-my-shopify-theme\\assets\\product-beginner.jpg",
+      "alt_text": "Beginner crochet kit with pastel yarns in premium gift box",
+      "generated": "2025-10-24T13:29:41.095149",
+      "shopify_ready": true
+    },
+    "product-intermediate": {
+      "filename": "product-intermediate.jpg",
+      "path": "C:\\Users\\Nurja\\OneDrive\\Documents\\IS373\\-my-shopify-theme\\assets\\product-intermediate.jpg",
+      "alt_text": "Intermediate crochet kit with jewel-tone yarns and multiple tools",
+      "generated": "2025-10-24T13:30:07.387451",
+      "shopify_ready": true
+    },
+    "product-advanced": {
+      "filename": "product-advanced.jpg",
+      "path": "C:\\Users\\Nurja\\OneDrive\\Documents\\IS373\\-my-shopify-theme\\assets\\product-advanced.jpg",
+      "alt_text": "Luxury advanced crochet kit with premium alpaca yarns",
+      "generated": "2025-10-24T13:30:41.587288",
+      "shopify_ready": true
     }
   },
-  "last_updated": "2025-10-23T23:59:09.996409"
+  "last_updated": "2025-10-24T13:30:41.587311"
 }

@@ -17,34 +17,49 @@
       <div class="crochet-testimonials__grid">
         {% for block in section.blocks %}
           <div class="crochet-testimonials__item" {{ block.shopify_attributes }}>
-            <div class="crochet-testimonials__stars">
-              {% for i in (1..5) %}
-                <span class="star">★</span>
-              {% endfor %}
-            </div>
-            
-            {% if block.settings.quote != blank %}
-              <blockquote class="crochet-testimonials__quote">
-                "{{ block.settings.quote }}"
-              </blockquote>
-            {% endif %}
-            
-            <div class="crochet-testimonials__author">
-              {% if block.settings.author_image != blank %}
-                <div class="crochet-testimonials__author-image">
-                  {{ block.settings.author_image | image_url: width: 60 | image_tag: alt: block.settings.author_name }}
+            <div class="crochet-testimonials__content">
+              <div class="crochet-testimonials__text">
+                <div class="crochet-testimonials__stars">
+                  {% for i in (1..5) %}
+                    <span class="star">★</span>
+                  {% endfor %}
                 </div>
-              {% endif %}
-              
-              <div class="crochet-testimonials__author-info">
-                {% if block.settings.author_name != blank %}
-                  <cite class="crochet-testimonials__author-name">{{ block.settings.author_name }}</cite>
+                
+                {% if block.settings.quote != blank %}
+                  <blockquote class="crochet-testimonials__quote">
+                    "{{ block.settings.quote }}"
+                  </blockquote>
                 {% endif %}
                 
-                {% if block.settings.author_title != blank %}
-                  <p class="crochet-testimonials__author-title">{{ block.settings.author_title }}</p>
-                {% endif %}
+                <div class="crochet-testimonials__author">
+                  {% if block.settings.author_image != blank %}
+                    <div class="crochet-testimonials__author-image">
+                      {{ block.settings.author_image | image_url: width: 60 | image_tag: alt: block.settings.author_name }}
+                    </div>
+                  {% endif %}
+                  
+                  <div class="crochet-testimonials__author-info">
+                    {% if block.settings.author_name != blank %}
+                      <cite class="crochet-testimonials__author-name">{{ block.settings.author_name }}</cite>
+                    {% endif %}
+                    
+                    {% if block.settings.author_title != blank %}
+                      <p class="crochet-testimonials__author-title">{{ block.settings.author_title }}</p>
+                    {% endif %}
+                  </div>
+                </div>
               </div>
+              
+              {% if block.settings.product_image != blank %}
+                <div class="crochet-testimonials__product">
+                  <div class="crochet-testimonials__product-image">
+                    {{ block.settings.product_image | image_url: width: 200 | image_tag: alt: block.settings.product_alt_text }}
+                  </div>
+                  {% if block.settings.product_name != blank %}
+                    <p class="crochet-testimonials__product-name">{{ block.settings.product_name }}</p>
+                  {% endif %}
+                </div>
+              {% endif %}
             </div>
           </div>
         {% endfor %}
@@ -82,7 +97,7 @@
   
   .crochet-testimonials__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
   }
@@ -94,6 +109,40 @@
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: left;
+  }
+  
+  .crochet-testimonials__content {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+  
+  .crochet-testimonials__text {
+    flex: 1;
+  }
+  
+  .crochet-testimonials__product {
+    flex-shrink: 0;
+    width: 120px;
+    text-align: center;
+  }
+  
+  .crochet-testimonials__product-image {
+    margin-bottom: 0.5rem;
+  }
+  
+  .crochet-testimonials__product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .crochet-testimonials__product-name {
+    font-size: 0.8rem;
+    color: rgba(var(--color-foreground), 0.7);
+    margin: 0;
+    font-weight: 500;
   }
   
   .crochet-testimonials__item:hover {
@@ -165,6 +214,16 @@
     
     .crochet-testimonials__item {
       padding: 2rem;
+    }
+    
+    .crochet-testimonials__content {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .crochet-testimonials__product {
+      width: 100px;
+      align-self: center;
     }
   }
 {% endstylesheet %}
@@ -241,6 +300,23 @@
           "type": "image_picker",
           "id": "author_image",
           "label": "Author Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_image",
+          "label": "Finished Product Image"
+        },
+        {
+          "type": "text",
+          "id": "product_name",
+          "label": "Product Name",
+          "default": "Cozy Blanket"
+        },
+        {
+          "type": "text",
+          "id": "product_alt_text",
+          "label": "Product Image Alt Text",
+          "default": "Beautiful finished crochet product"
         }
       ]
     }
@@ -254,7 +330,9 @@
           "settings": {
             "quote": "I've been crocheting for years, but these kits have introduced me to techniques and yarns I never would have tried on my own. Each month feels like Christmas morning!",
             "author_name": "Sarah M.",
-            "author_title": "Crochet Enthusiast, 3 years subscriber"
+            "author_title": "Crochet Enthusiast, 3 years subscriber",
+            "product_name": "Cozy Blanket",
+            "product_alt_text": "Beautiful finished crochet blanket in soft colors"
           }
         },
         {
@@ -262,15 +340,19 @@
           "settings": {
             "quote": "As a beginner, I was intimidated by crochet. These kits made it so approachable with clear instructions and beautiful results. I've completed 8 projects so far!",
             "author_name": "Jessica L.",
-            "author_title": "New Crocheter"
+            "author_title": "New Crocheter",
+            "product_name": "Elegant Scarf",
+            "product_alt_text": "Finished crochet scarf with delicate lace pattern"
           }
         },
         {
           "type": "testimonial",
           "settings": {
-            "quote": "The yarn quality is exceptional and the patterns are modern and stylish. I've made gifts for my entire family from these kits. Worth every penny!",
+            "quote": "Every project looks like something from a boutique! The thoughtful curation and beautiful packaging make these kits perfect for gifts. My family loves what I create!",
             "author_name": "Maria R.",
-            "author_title": "Gift Maker Extraordinaire"
+            "author_title": "New York • Gift Maker",
+            "product_name": "Stylish Tote Bag",
+            "product_alt_text": "Handmade crochet tote bag in teal with geometric pattern"
           }
         }
       ]
